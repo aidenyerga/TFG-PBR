@@ -11,7 +11,9 @@ Carmen Hernández Gómez
 ```
 
 ## Demo:
-Este fichero se actualizará para añadir un enlace a una demo online.
+<img src="https://github.com/eritzyg/tfg-pbr-demo/raw/master/docs/scene.jpg">
+
+[![Open demo button](https://github.com/eritzyg/tfg-pbr-demo/raw/master/docs/demo_button.png)](https://eritzyg.github.io/tfg-pbr-demo/)
 
 ## Estructura del código del proyecto:
 En la carpeta _pbr_ se encuentran los ficheros de la aplicación, para abrir la aplicación abriremos el fichero _pbr.html_. Dentro de la carpeta _pbr_, en la carpeta _code_ se encuentra todo el código JavaScript principal de la aplicación, en la carpeta _libs_ se encuentran las librerías JavaScript utilizadas en el proyecto, en las carpetas _materials_ y _scenes_ se encuentran los materiales y escenas respectivamente, y finalmente, en la carpeta _shaders_ se encuentra el fichero _shaders.js_ que contiene todos los shaders en variables JavaScript. Por otro lado, en la carpeta _src/shaders_ se encuentran los ficheros fuente (.vert y .frag) de los shaders GLSL.
