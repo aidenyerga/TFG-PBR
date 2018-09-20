@@ -178,6 +178,26 @@ principled:
         lights: true,
         vertexShader: shaders.principled_BRDF.vert,
         fragmentShader: shaders.principled_BRDF.frag
+    }),
+
+    cloth_floor: new THREE.ShaderMaterial({  
+        uniforms: THREE.UniformsUtils.merge([THREE.UniformsLib['lights'], 
+        {  
+            baseColor: new THREE.Uniform(new THREE.Vector3(0.2588, 0.2588, 0.2588)),
+            subsurface: new THREE.Uniform(new Number(0.0)),
+            metallic: new THREE.Uniform(new Number(0.0)),
+            specular: new THREE.Uniform(new Number(0.0)),
+            specularTint: new THREE.Uniform(new Number(0.0)),
+            roughness: new THREE.Uniform(new Number(0.74)),
+            anisotropic: new THREE.Uniform(new Number(0.0)),
+            sheen: new THREE.Uniform(new Number(1.0)),
+            sheenTint: new THREE.Uniform(new Number(0.6)),
+            clearcoat: new THREE.Uniform(new Number(0.0)),
+            clearcoatGloss: new THREE.Uniform(new Number(0.0)),
+        }]),
+        lights: true,
+        vertexShader: shaders.principled_BRDF.vert,
+        fragmentShader: shaders.principled_BRDF.frag
     })
 }
 };
